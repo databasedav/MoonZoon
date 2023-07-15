@@ -61,6 +61,27 @@ fn send_message() {
     });
 }
 
+pub async fn send_messages_forever() {
+    let mut i = 0;
+    loop {
+        let mut messages_lock = messages().lock_mut();
+        messages_lock.push_cloned(Message { username: username().get_cloned(), text: format!("hello {}", i) });
+        jump_to_bottom();
+        let l = messages_lock.len();
+        let max = 200;
+        if l > max {
+            let excess = l - max;
+            if excess > 0 {
+                for _ in 0..excess {
+                    messages_lock.remove(0);
+                }
+            }
+        }
+        Timer::sleep(10).await;
+        i += 1;
+    }
+}
+
 fn jump_to_bottom() {
     received_messages_viewport_y().set(i32::MAX);
 }
