@@ -71,10 +71,8 @@ pub async fn send_messages_forever() {
         let max = 200;
         if l > max {
             let excess = l - max;
-            if excess > 0 {
-                for _ in 0..excess {
-                    messages_lock.remove(0);
-                }
+            for _ in 0..excess {
+                messages_lock.remove(0);
             }
         }
         drop(messages_lock);
