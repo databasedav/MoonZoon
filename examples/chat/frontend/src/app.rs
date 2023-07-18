@@ -77,6 +77,7 @@ pub async fn send_messages_forever() {
                 }
             }
         }
+        drop(messages_lock);
         Timer::sleep(10).await;
         i += 1;
     }
