@@ -31,9 +31,14 @@ fn root() -> impl IntoElementIterator {
     ]
 }
 
+async fn startup() {
+    async {
+        window().open_with_url("https://google.com");
+    }
+    .await;
+}
+
 fn main() {
     start_app("app", root);
-    Task::start(async {
-        window().open_with_url("https://google.com");
-    });
+    Task::start(startup());
 }
