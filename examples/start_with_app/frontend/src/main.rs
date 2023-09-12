@@ -18,9 +18,22 @@ fn root() -> impl IntoElementIterator {
         Button::new().label("-").on_press(decrement),
         Text::with_signal(counter().signal()),
         Button::new().label("+").on_press(increment),
+        Row::new()
+        .item_signal(
+            always(true)
+            .map_true(|| {
+                // Task::start(async{});
+                El::new()
+                .s(Height::fill())
+                .s(Width::exact_signal(always(1)))
+            })
+        )
     ]
 }
 
 fn main() {
     start_app("app", root);
+    Task::start(async {
+        window().open_with_url("https://google.com");
+    });
 }
