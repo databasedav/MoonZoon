@@ -1,10 +1,10 @@
-# port = 8080
-port = 8443
+port = 8080
+# port = 8443
 # HTTPS is enabled to make the example runnable on mobile browsers -
 # cross-origin isolation headers automatically enabled on the Moon backend
 # are taken into account by the browser only when served over HTTPS or from the 'localhost' domain.
 # Phones are connected through IP to the local dev machine, not through 'localhost'.
-https = true
+https = false
 cache_busting = true
 backend_log_level = "warn" # "error" / "warn" / "info" / "debug" / "trace"
 # required to enable blocking tasks

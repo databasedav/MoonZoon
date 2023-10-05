@@ -15,4 +15,7 @@ wasm-bindgen-test = "0.3.19"
 
 [dependencies]
 zoon.workspace = true
-
+web-sys = {version = "*", features = ["HtmlObjectElement"]}
+rust_hsluv = { version = "*", default-features = false, package = "rust-hsluv" }
+rand = { version = "*", default-features = false }
+getrandom = { version = "*", features = ["js"], default-features = false }

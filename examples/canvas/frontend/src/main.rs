@@ -57,7 +57,7 @@ fn paint_canvas() {
             }
             .apply(JsValue::from);
 
-            ctx.set_line_width(10.);
+            // ctx.set_line_width(10.);
             ctx.set_fill_style(&style);
             ctx.set_stroke_style(&style);
             // Wall
@@ -66,7 +66,7 @@ fn paint_canvas() {
             ctx.fill_rect(130., 190., 40., 60.);
             // Roof
             ctx.begin_path();
-            ctx.move_to(50., 140.);
+            ctx.move_to(50., 150.);
             ctx.line_to(150., 60.);
             ctx.line_to(250., 140.);
             ctx.close_path();

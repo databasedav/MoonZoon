@@ -19,4 +19,4 @@ publish = false
 
 [workspace.dependencies]
 moon = { path = "../../crates/moon" }
-zoon = { path = "../../crates/zoon" }
+zoon = { path = "../../crates/zoon", features = ["frontend_multithreading"] }
