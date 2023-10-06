@@ -668,7 +668,7 @@ name = "frontend"
 version = "0.1.0"
 dependencies = [
  "getrandom",
- "rand 0.4.6",
+ "rand 0.8.5",
  "rust-hsluv",
  "wasm-bindgen-test",
  "web-sys",
