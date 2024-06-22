@@ -14,7 +14,7 @@ pub use futures_signals::{
         MutableVecLockMut, SignalVec, SignalVecExt, VecDiff,
     },
 };
-pub use futures_util_ext::*;
+pub use haalka_futures_util_ext::*;
 
 mod signal_ext_bool;
 pub use signal_ext_bool::SignalExtBool;

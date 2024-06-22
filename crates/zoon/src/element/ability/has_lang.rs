@@ -1,9 +1,0 @@
-use crate::*;
-
-// ------ HasLang ------
-
-pub trait HasLang: RawElWrapper + Sized {
-    fn lang<'a>(self, lang: Lang) -> Self {
-        self.update_raw_el(move |raw_el| raw_el.lang(lang))
-    }
-}
