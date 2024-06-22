@@ -44,7 +44,7 @@ impl<S: SignalExt> SignalExtExt for S {}
 #[must_use = "Futures do nothing unless polled"]
 pub struct ForEachSync<A, C> {
     #[pin]
-    inner: futures_util_ext::stream_ext_ext::ForEachSync<SignalStream<A>, C>,
+    inner: haalka_futures_util_ext::stream_ext_ext::ForEachSync<SignalStream<A>, C>,
 }
 
 impl<A, C> Future for ForEachSync<A, C>
