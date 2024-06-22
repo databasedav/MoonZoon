@@ -1,2 +1,0 @@
-# Custom Config
-> MoonZoon example
