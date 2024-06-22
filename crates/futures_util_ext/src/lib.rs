@@ -1,5 +1,5 @@
 pub use futures_util::{
-    self, future, select as select_future, Future, FutureExt, Sink, SinkExt, Stream, StreamExt,
+    self, future, Future, FutureExt, Sink, SinkExt, Stream, StreamExt,
 };
 
 pub mod stream_ext_ext;
