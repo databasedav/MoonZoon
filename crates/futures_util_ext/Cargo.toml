@@ -2,6 +2,7 @@
 name = "haalka_futures_util_ext"
 version = "0.0.1"
 edition = "2021"
+description = "vendored version of MoonZoon's futures_util_ext, as it is yet to be released as a crate"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/databasedav/haalka"
 
