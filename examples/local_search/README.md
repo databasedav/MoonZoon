@@ -1,2 +1,0 @@
-# LocalSearch
-> MoonZoon example

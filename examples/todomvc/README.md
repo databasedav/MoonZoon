@@ -1,2 +1,0 @@
-# TodoMVC
-> MoonZoon example

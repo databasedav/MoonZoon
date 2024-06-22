@@ -1,2 +1,0 @@
-# Blocking Task
-> MoonZoon example

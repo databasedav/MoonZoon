@@ -1,2 +1,0 @@
-# Resize Drag
-> MoonZoon example

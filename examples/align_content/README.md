@@ -1,2 +1,0 @@
-# Align content
-> MoonZoon example
